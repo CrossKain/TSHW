@@ -9,10 +9,10 @@ type User = {
 type Admin = {
     name: string;
     age: number;
-    role?: string;
+    role: string;
 };
 
-type Persons = User[]
+type Persons = User[] | Admin[]
 
 const persons: Persons = [
     {
@@ -40,6 +40,7 @@ const persons: Persons = [
         age: 20,
         group: 'Музыкант',
     },
+  
 
 ];
 
