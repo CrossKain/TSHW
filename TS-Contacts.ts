@@ -4,7 +4,7 @@ type User = {
     name: string;
     age: number;
     group: string;
-    role?: string;
+
 };
 type Admin = {
     name: string;
@@ -40,15 +40,11 @@ const persons: Persons = [
         age: 20,
         group: 'Музыкант',
     },
-    {
-        name: 'Админ',
-        age: 20,
-        role: 'Музыкант',
-    },
+
 ];
 
-const logPerson = (person: User | Admin) => {
-    console.log(`${person.name}, ${person.age}`);
+const logPerson = (persons: User | Admin) => {
+    console.log(`${persons.name}, ${persons.age}`);
 }
 
 console.log('Users:');

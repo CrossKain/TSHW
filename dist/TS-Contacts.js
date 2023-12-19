@@ -1,5 +1,5 @@
 "use strict";
-const person = [
+const persons = [
     {
         name: 'Иван Петров',
         age: 27,
@@ -25,14 +25,9 @@ const person = [
         age: 20,
         group: 'Музыкант',
     },
-    {
-        name: 'Админ',
-        age: 20,
-        role: 'Музыкант',
-    },
 ];
-const logPerson = (person) => {
-    console.log(`${person.name}, ${person.age}`);
+const logPerson = (persons) => {
+    console.log(`${persons.name}, ${persons.age}`);
 };
 console.log('Users:');
-person.forEach(logPerson);
+persons.forEach(logPerson);
